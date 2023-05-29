@@ -1,7 +1,7 @@
 # Store
 
 ## CRUD OPERATIONS WITH QUERY
-@Modifying
+	@Modifying
 	@Query(value = "INSERT INTO Products (name, price, quantity) VALUES (:name, :price, :quantity)", nativeQuery = true)
 	@Transactional
 	void insertProduct(@Param("name") String name, @Param("price") int price, @Param("quantity") int quantity);
